@@ -14,8 +14,15 @@
             <img src="assets/atlasLogo.png" alt="Logo">
         </div>
 
-        <div class="menu">
-            <a href="accueil.html">Accueil</a>
+        <input class="menu-toggle-checkbox" type="checkbox" id="menu-toggle" aria-label="Afficher le menu">
+        <label class="menu-toggle" for="menu-toggle" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <div class="menu" id="primary-menu">
+            <a href="index.html" aria-current="page">Accueil</a>
             <a href="Programme.html">Programme</a>
             <a href="Intervenants.html">Intervenants</a>
             <a href="Inscription.html">Inscription</a>
@@ -42,12 +49,9 @@
 
         <div class="cle">
             <h2>Les clés d'événement</h2>
-
-            <ul>
-                <li>6 Intervenants.</li>
-                <li>6 Talks.</li>
-                <li>2 Jours.</li>
-            </ul>
+            <h3>6 Intervenants.</h3>
+            <h3>6 Talks.</h3>
+            <h3>2 Jours.</h3>
         </div>
 
         <div class="presentation">

@@ -17,11 +17,18 @@
         <img src="assets/atlasLogo.png" alt="Logo" />
       </div>
 
-      <div class="menu">
-        <a href="accueil.html">Accueil</a>
+      <input class="menu-toggle-checkbox" type="checkbox" id="menu-toggle" aria-label="Afficher le menu">
+      <label class="menu-toggle" for="menu-toggle" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="menu" id="primary-menu">
+        <a href="index.html">Accueil</a>
         <a href="Programme.html">Programme</a>
         <a href="Intervenants.html">Intervenants</a>
-        <a href="Inscription.html">Inscription</a>
+        <a href="Inscription.html" aria-current="page">Inscription</a>
       </div>
     </div>
 
@@ -96,7 +103,7 @@
           <label for="both">Les deux</label><br /><br />
 
           <label for="msg">Message</label><br />
-          <textarea name="msg" id="msg">Entrer votre message ici...</textarea
+          <textarea name="msg" id="msg"></textarea
           ><br /><br />
 
           <label>
