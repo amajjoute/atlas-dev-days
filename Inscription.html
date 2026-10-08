@@ -1,120 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Inscrivez-vous aux Atlas Dev Days à Nador. Choisissez vos ateliers de développement web, sélectionnez vos jours de participation et préparez votre expérience tech.">
-    <link rel="icon" type="image/x-icon" href="assets/atlasFavicon.png">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Inscrivez-vous aux Atlas Dev Days à Nador. Choisissez vos ateliers de développement web, sélectionnez vos jours de participation et préparez votre expérience tech."
+    />
+    <link rel="icon" type="image/x-icon" href="assets/atlasFavicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Atlas Dev Days | Inscription page</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="header">
-        <div class="logo">
-            <img src="assets/atlasLogo.png" alt="Logo">
-        </div>
+      <div class="logo">
+        <img src="assets/atlasLogo.png" alt="Logo" />
+      </div>
 
-        <div class="menu">
-            <a href="accueil.html">Accueil</a>
-            <a href="Programme.html">Programme</a>
-            <a href="Intervenants.html">Intervenants</a>
-            <button><a href="Inscription.html">Inscription</a></button>
-        </div>
+      <div class="menu">
+        <a href="accueil.html">Accueil</a>
+        <a href="Programme.html">Programme</a>
+        <a href="Intervenants.html">Intervenants</a>
+        <button><a href="Inscription.html">Inscription</a></button>
+      </div>
     </div>
 
     <div id="main">
-        <h1>Inscription</h1>
+      <h1>Inscription</h1>
 
-        <div class="formInscription">
-            <label for="fuulName">Nom complet</label><br>
-            <input type="text" id="fullName" name="fullName" required minlength="3"><br><br>
+      <div class="formInscription">
+        <form>
+          <label for="fuulName">Nom complet</label><br />
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            required
+            minlength="3"
+          /><br /><br />
 
-            <label for="mail">Email</label><br>
-            <input type="email" id="mail" name="mail" required><br><br>
+          <label for="mail">Email</label><br />
+          <input type="email" id="mail" name="mail" required /><br /><br />
 
-            <label for="phone">Téléphone</label><br>
-            <input type="tel" id="phone" name="phone" required pattern="^(\+212|0)[5-7][0-9]{8}$"><br><br>
+          <label for="phone">Téléphone</label>
+          <br />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            pattern="^(\+212|0)[5-7][0-9]{8}$"
+          /><br /><br />
 
-            <label for="profil">profil</label>
-            <select name="profil" id="profil" required>
-                <option value="">Choisissez votre profil</option>
-                <option value="etudiant">Étudiant·e</option>
-                <option value="devloppeur">Développeur·se</option>
-                <option value=" autre"> Autre</option>
-            </select><br><br>
+          <label for="profil">profil</label>
+          <select name="profil" id="profil" required>
+            <option value="">Choisissez votre profil</option>
+            <option value="etudiant">Étudiant·e</option>
+            <option value="devloppeur">Développeur·se</option>
+            <option value=" autre">Autre</option></select
+          ><br /><br />
 
-            <div class="ateliers">
-                <label>Ateliers souhaités:</label><br>
+          <div class="ateliers">
+            <label>Ateliers souhaités:</label><br />
 
-                <input type="checkbox" id="atelier1" name="atelier1" value="Code&Build">
-                <label for="atelier1">Code & Build</label><br>
-                <input type="checkbox" id="atelier2" name="atelier2" value="gitMasters">
-                <label for="atelier2">Git Masters</label><br>
-                <input type="checkbox" id="atelier3" name="atelier3" value="aiMeetsWeb">
-                <label for="atelier3">AI meets Web</label>
-            </div><br>
+            <input
+              type="checkbox"
+              id="atelier1"
+              name="atelier1"
+              value="Code&Build"
+            />
+            <label for="atelier1">Code & Build</label><br />
+            <input
+              type="checkbox"
+              id="atelier2"
+              name="atelier2"
+              value="gitMasters"
+            />
+            <label for="atelier2">Git Masters</label><br />
+            <input
+              type="checkbox"
+              id="atelier3"
+              name="atelier3"
+              value="aiMeetsWeb"
+            />
+            <label for="atelier3">AI meets Web</label>
+          </div>
+          <br />
 
-            <label>Journée(s) de participation:</label><br>
-            <input type="radio" id="day1" name="days" required>
-            <label for="day1">Jour 1</label><br>
-            <input type="radio" id="day2" name="days">
-            <label for="day2">Jour 2</label><br>
-            <input type="radio" id="both" name="days">
-            <label for="both">Les deux</label><br><br>
+          <label>Journée(s) de participation:</label><br />
+          <input type="radio" id="day1" name="days" required />
+          <label for="day1">Jour 1</label><br />
+          <input type="radio" id="day2" name="days" />
+          <label for="day2">Jour 2</label><br />
+          <input type="radio" id="both" name="days" />
+          <label for="both">Les deux</label><br /><br />
 
-            <label for="msg">Message</label><br>
-            <textarea name="msg" id="msg">Entrer votre message ici...</textarea><br><br>
+          <label for="msg">Message</label><br />
+          <textarea name="msg" id="msg">Entrer votre message ici...</textarea
+          ><br /><br />
 
-            <label>
-                <input type="checkbox" name="consent" required>
-                J'accepte la
-                <a href="errorMessage/err.html" target="_blank">
-                    politique de confidentialité
-                </a>
-                et le traitement de mes données personnelles.
-            </label><br>
+          <label>
+            <input type="checkbox" name="consent" required />
+            J'accepte la
+            <a href="errorMessage/err.html" target="_blank">
+              politique de confidentialité
+            </a>
+            et le traitement de mes données personnelles. </label
+          ><br />
 
-            <button>submit</button><br><br>
+          <button>submit</button><br /><br />
+        </form>
 
-            <div class="practical-info">
-                <h2>Informations pratiques</h2>
+        <div class="practical-info">
+          <h2>Informations pratiques</h2>
 
-                <div class="address">
-                    <h3>Adresse:</h3>
-                        <p>Technopark Casablanca, Maroc</p>
-                </div>
+          <div class="address">
+            <h3>Adresse:</h3>
+            <p>Technopark Casablanca, Maroc</p>
+          </div>
 
-                <div class="time">
-                    <h3>Horaires:</h3>
-                        <p>9 et 10 octobre, de 09h00 à 17h00</p>
-                </div>
+          <div class="time">
+            <h3>Horaires:</h3>
+            <p>9 et 10 octobre, de 09h00 à 17h00</p>
+          </div>
 
-                <div class="access">
-                    <h3>Accès:</h3>
-                        <p>Accessible en transport en commun. Parking à proximité.</p>
-                </div>
-            </div>
+          <div class="access">
+            <h3>Accès:</h3>
+            <p>Accessible en transport en commun. Parking à proximité.</p>
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="footer">
-        <div class="list">
-            <a href="errorMessage/err.html">About us</a>
-            <a href="errorMessage/err.html">Contact Us</a>
-            <a href="errorMessage/err.html">FAQ</a>
-            <a href="errorMessage/err.html">Privacy Policy</a>
-        </div>
+      <div class="list">
+        <a href="errorMessage/err.html">About us</a>
+        <a href="errorMessage/err.html">Contact Us</a>
+        <a href="errorMessage/err.html">FAQ</a>
+        <a href="errorMessage/err.html">Privacy Policy</a>
+      </div>
 
-        <div class="socialMediaIcons">
-                <a href="errorMessage/err.html"><img src="assets/facebook1.png" alt="facebook logo"></a>
-                <a href="errorMessage/err.html"><img src="assets/instagram1.png" alt="instagram logo"></a>
-                <a href="errorMessage/err.html"><img src="assets/twitter1.png" alt="twitter logo"></a>
-                <a href="errorMessage/err.html"><img src="assets/linkedin1.png" alt="linkedin logo"></a>
-        </div>
+      <div class="socialMediaIcons">
+        <a href="errorMessage/err.html"
+          ><img src="assets/facebook1.png" alt="facebook logo"
+        /></a>
+        <a href="errorMessage/err.html"
+          ><img src="assets/instagram1.png" alt="instagram logo"
+        /></a>
+        <a href="errorMessage/err.html"
+          ><img src="assets/twitter1.png" alt="twitter logo"
+        /></a>
+        <a href="errorMessage/err.html"
+          ><img src="assets/linkedin1.png" alt="linkedin logo"
+        /></a>
+      </div>
 
-        <div class="copyright">
-            <p>&copy; 2026 ATLAS_DEV. All Rights Reserved.</p>
-        </div>
+      <div class="copyright">
+        <p>&copy; 2026 ATLAS_DEV. All Rights Reserved.</p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
